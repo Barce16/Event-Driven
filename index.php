@@ -47,7 +47,7 @@
                         <a class="nav-link" href="javascript:void(0)">Dashboard</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./registration.php">Reservation</a>
+                        <a class="nav-link" href="./registration.php">Registration</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./reservation.php">Reservation</a>
@@ -110,7 +110,11 @@
             </tbody>
             </table>
         </div>
-        <div class="card-footer">This are all the List of Guest Park thier car to our Smart Parking System </div>
+        <div 
+         class="navbar-brand" href="javascript:void(0)">
+                <img src="./assets/img/sport-car.png" height="50" class="card-footer ">This are all the List of Guest Park thier car to our Smart Parking System </div>
+        
+        
     </div>
     <!-- For Text/Typography Buttom-->
 
