@@ -112,7 +112,9 @@
         </div>
         <div 
          class="navbar-brand" href="javascript:void(0)">
-                <img src="./assets/img/sport-car.png" height="50" class="card-footer ">This are all the List of Guest Park thier car to our Smart Parking System </div>
+                <img src="./assets/img/sport-car.png" height="50" 
+                
+                class="card-footer" >This are all the List of Guest Park thier car to our Smart Parking System </div>
         
         
     </div>

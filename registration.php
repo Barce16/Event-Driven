@@ -65,58 +65,60 @@
 
             <form action="">
                 <div class="row">
-                    <!-- ID -->
-                        <div class="col-md-2">
-                            <label>ID : <b class="text-danger"></b>Any type of ID</label>
-                            <input type="" placeholder="Enter Any ID..." class="form-control mt-2">
-                        </div>
-                        <!-- ID -->
-                        <br>
+                    
+                        
                         <!-- Fname -->
-                        <div class="col-md-2">
-                            <label>First Name : <b class="text-danger"></b></label>
+                        <div class="col-md-4">
+                            <label>First Name  <b class="text-danger"></b></label>
                             <input type="" placeholder="Enter first name here..." class="form-control mt-2">
                         </div>
                         <!-- Fname -->
                         <br>
                         <!-- Lname -->
-                        <div class="col-md-2">
-                            <label>Last Name : <b class="text-danger"></b></label>
+                        <div class="col-md-4">
+                            <label>Last Name  <b class="text-danger"></b></label>
                             <input type="" placeholder="Enter Last name here..." class="form-control mt-2">
                         </div>
                         <!-- Lname -->
                         <br>
                         <!-- Mname -->
-                        <div class="col-md-2">
-                            <label>Middle Name : <b class="text-danger"></b></label>
+                        <div class="col-md-4">
+                            <label>Middle Name  <b class="text-danger"></b></label>
                             <input type="" placeholder="Enter Middle name here..." class="form-control mt-2">
                         </div>
                         <!-- Mname -->
                         <br>
                         <!-- email -->
-                        <div class="col-md-8">
-                            <label>Gmail: <b class="text-danger"></b></label>
-                            <input type="" placeholder="Enter Gmail here..." class="form-control mt-2">
+                        <div class="col-md-6">
+                            <label>Gmail: Ex.ParkingSystem@gmail.com <b class="text-danger"></b></label>
+                            <input type="" placeholder="Enter Email here..." class="form-control mt-2">
                         </div>
                         <!-- email -->
                         <br>
                         <!-- Address -->
-                        <div class="col-md-8">
-                            <label>Address : <b class="text-danger"></b></label>
+                        <div class="col-md-6">
+                            <label>Address  <b class="text-danger"></b></label>
                             <input type="" placeholder="Enter Address here..." class="form-control mt-2">
                         </div>
                         <!-- Address -->
                         <br>
+                        <!-- ID -->
+                        <div class="col-md-4">
+                            <label>ID : <b class="text-danger"></b>Any type of ID</label>
+                            <input type="" placeholder="Enter Any ID..." class="form-control mt-2">
+                        </div>
+                        <!-- ID -->
+                        <br>
                         <!-- Contact# -->
-                        <div class="col-md-6">
-                            <label>Contact # : <b class="text-danger"></b></label>
+                        <div class="col-md-4">
+                            <label>Contact #  <b class="text-danger"></b></label>
                             <input type="" placeholder="Enter Contact Number here..." class="form-control mt-2">
                         </div>
                         <!-- Contact# -->
                         <br>
                         <!-- Gender -->
-                        <div class="col-md-2">
-                            <label>Gender : <b class="text-danger"></b></label>
+                        <div class="col-md-4 mt-4">
+                            <label>Gender  <b class="text-danger"></b></label>
                             <select name="" id="" class="for-control mt-2">
                             <option value="" disabled selected>--SELECT GENDER--</option>
                             <option value="Male">Male</option>
@@ -125,12 +127,15 @@
                             
                         </div>
                         <!-- Gender -->
+                       
                 </div>
             </form>
 
                 <!-- Modal footer -->
                 <div class="card-footer">
-                
+                <button class="btn btn-success">
+                    Register Now!!
+                </button>
 
                 <!-- For Text/Typography Buttom-->
 
