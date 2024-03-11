@@ -63,27 +63,27 @@
             <div class="card-header" style="text-align : center;"><-----Register Now !!!-----></div>
             <div class="card-body">
 
-            <form action="">
-                <div class="row">
-                    
-                        
+                <form action="">
+                    <div class="row">
+
+
                         <!-- Fname -->
                         <div class="col-md-4">
-                            <label>First Name  <b class="text-danger"></b></label>
+                            <label>First Name <b class="text-danger"></b></label>
                             <input type="" placeholder="Enter first name here..." class="form-control mt-2">
                         </div>
                         <!-- Fname -->
                         <br>
                         <!-- Lname -->
                         <div class="col-md-4">
-                            <label>Last Name  <b class="text-danger"></b></label>
+                            <label>Last Name <b class="text-danger"></b></label>
                             <input type="" placeholder="Enter Last name here..." class="form-control mt-2">
                         </div>
                         <!-- Lname -->
                         <br>
                         <!-- Mname -->
                         <div class="col-md-4">
-                            <label>Middle Name  <b class="text-danger"></b></label>
+                            <label>Middle Name <b class="text-danger"></b></label>
                             <input type="" placeholder="Enter Middle name here..." class="form-control mt-2">
                         </div>
                         <!-- Mname -->
@@ -97,7 +97,7 @@
                         <br>
                         <!-- Address -->
                         <div class="col-md-6">
-                            <label>Address  <b class="text-danger"></b></label>
+                            <label>Address <b class="text-danger"></b></label>
                             <input type="" placeholder="Enter Address here..." class="form-control mt-2">
                         </div>
                         <!-- Address -->
@@ -111,31 +111,34 @@
                         <br>
                         <!-- Contact# -->
                         <div class="col-md-4">
-                            <label>Contact #  <b class="text-danger"></b></label>
+                            <label>Contact # <b class="text-danger"></b></label>
                             <input type="" placeholder="Enter Contact Number here..." class="form-control mt-2">
                         </div>
                         <!-- Contact# -->
                         <br>
                         <!-- Gender -->
                         <div class="col-md-4 mt-4">
-                            <label>Gender  <b class="text-danger"></b></label>
+                            <label>Gender <b class="text-danger"></b></label>
                             <select name="" id="" class="for-control mt-2">
-                            <option value="" disabled selected>--SELECT GENDER--</option>
-                            <option value="Male">Male</option>
-                            <option value="Female">Female</option>
+                                <option value="" disabled selected>--SELECT GENDER--</option>
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
                             </select>
-                            
+
                         </div>
                         <!-- Gender -->
-                       
-                </div>
-            </form>
 
-                <!-- Modal footer -->
-                <div class="card-footer">
-                <button class="btn btn-success">
-                    Register Now!!
-                </button>
+                    </div>
+                </form>
+                 <!-- Modal footer -->
+            <div class="card-footer col-md-6">
+                <span style="float: right">
+                    <button class="btn btn-success">
+                        Register Now!!
+                    </button>
+                </span>
+            </div>
+           
 
                 <!-- For Text/Typography Buttom-->
 

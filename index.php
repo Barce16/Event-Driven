@@ -53,13 +53,16 @@
                         <a class="nav-link" href="./reservation.php">Reservation</a>
                     </li>
                 </ul>
-                <span class="navbar-text col text-center">Welcome to Smart Reservation Parking System</span>
+                <strong>
+                <span class="navbar-text col text-center">Welcome to Reservation Smart Parking System</span>
                 <form class="d-flex">
                     <input onkeyup="search(this.value)" class="form-control me-2" type="text"
-                        placeholder="Search anything here">
+                        placeholder="Search for vacant parking area">
                     <button class="btn btn-primary" type="button">Search</button>
                 </form>
+               
             </div>
+            </strong>
             <!-- Navigation bars buttom-->
         </div>
     </nav>
@@ -114,7 +117,7 @@
          class="navbar-brand" href="javascript:void(0)">
                 <img src="./assets/img/sport-car.png" height="50" 
                 
-                class="card-footer" >This are all the List of Guest Park thier car to our Smart Parking System </div>
+                class="card-footer" >This are all the List of Guest </div>
         
         
     </div>
