@@ -57,90 +57,102 @@
     </nav>
     <!-- For Text/Typography Front -->
     <div class="container-fluid mb-5">
-        <p class="h1 mt-2">Registration</p>
-        <p class="mt-2">You can Register here</p>
-        <div class="card mt-2">
-            <div class="card-header" style="text-align : center;"><-----Register Now !!!-----></div>
-            <div class="card-body">
+    </div>
+    <p class="h1 mt-2">Registration</p>
+    <p class="mt-2">You can Register here</p>
+    <div class="card mt-2">
 
-                <form action="">
-                    <div class="row">
+        <form action="/model/save.php/" method="POST">
+            <div class="row">
+
+                <div class="card-header" style="text-align : center;"><-----Register Now !!!-----></div>
+                <div class="card-body">
 
 
-                        <!-- Fname -->
-                        <div class="col-md-4">
-                            <label>First Name <b class="text-danger"></b></label>
-                            <input type="" placeholder="Enter first name here..." class="form-control mt-2">
-                        </div>
-                        <!-- Fname -->
-                        <br>
-                        <!-- Lname -->
-                        <div class="col-md-4">
-                            <label>Last Name <b class="text-danger"></b></label>
-                            <input type="" placeholder="Enter Last name here..." class="form-control mt-2">
-                        </div>
-                        <!-- Lname -->
-                        <br>
-                        <!-- Mname -->
-                        <div class="col-md-4">
-                            <label>Middle Name <b class="text-danger"></b></label>
-                            <input type="" placeholder="Enter Middle name here..." class="form-control mt-2">
-                        </div>
-                        <!-- Mname -->
-                        <br>
-                        <!-- email -->
-                        <div class="col-md-6">
-                            <label>Gmail: Ex.ParkingSystem@gmail.com <b class="text-danger"></b></label>
-                            <input type="" placeholder="Enter Email here..." class="form-control mt-2">
-                        </div>
-                        <!-- email -->
-                        <br>
-                        <!-- Address -->
-                        <div class="col-md-6">
-                            <label>Address <b class="text-danger"></b></label>
-                            <input type="" placeholder="Enter Address here..." class="form-control mt-2">
-                        </div>
-                        <!-- Address -->
-                        <br>
-                        <!-- ID -->
-                        <div class="col-md-4">
-                            <label>ID : <b class="text-danger"></b>Any type of ID</label>
-                            <input type="" placeholder="Enter Any ID..." class="form-control mt-2">
-                        </div>
-                        <!-- ID -->
-                        <br>
-                        <!-- Contact# -->
-                        <div class="col-md-4">
-                            <label>Contact # <b class="text-danger"></b></label>
-                            <input type="" placeholder="Enter Contact Number here..." class="form-control mt-2">
-                        </div>
-                        <!-- Contact# -->
-                        <br>
-                        <!-- Gender -->
-                        <div class="col-md-4 mt-4">
-                            <label>Gender <b class="text-danger"></b></label>
-                            <select name="" id="" class="for-control mt-2">
-                                <option value="" disabled selected>--SELECT GENDER--</option>
-                                <option value="Male">Male</option>
-                                <option value="Female">Female</option>
-                            </select>
 
-                        </div>
-                        <!-- Gender -->
+                    <!-- Fname -->
+                    <div class="col-md-4 mt-2">
+                        <label>First Name <b class="text-danger"></b></label>
+                        <input name="inp_ID" required type="text" placeholder="Enter first name here..."
+                            class="form-control mt-2 ">
+                    </div>
+                    <!-- Fname -->
+                    <br>
+                    <!-- Lname -->
+                    <div class="col-md-4">
+                        <label>Last Name <b class="text-danger"></b></label>
+                        <input name="inp_FName" required type="text" placeholder="Enter Last name here..."
+                            class="form-control mt-2">
+                    </div>
+                    <!-- Lname -->
+                    <br>
+                    <!-- Mname -->
+                    <div class="col-md-4">
+                        <label>Middle Name <b class="text-danger"></b></label>
+                        <input nname="inp_LName" required type="text" placeholder="Enter Middle name here..."
+                            class="form-control mt-2">
+                    </div>
+                    <!-- Mname -->
+                    <br>
+                    <!-- email -->
+                    <div class="col-md-4">
+                        <label>Gmail: Ex.ParkingSystem@gmail.com <b class="text-danger"></b></label>
+                        <input name="inp_MName" required type="text" placeholder="Enter Email here..."
+                            class="form-control mt-2">
+                    </div>
+                    <!-- email -->
+                    <br>
+                    <!-- Address -->
+                    <div class="col-md-4">
+                        <label>Address <b class="text-danger"></b></label>
+                        <input name="inp_Gmail" required type="text" placeholder="Enter Address here..."
+                            class="form-control mt-2">
+                    </div>
+                    <!-- Address -->
+                    <br>
+                    <!-- ID -->
+                    <div class="col-md-4">
+                        <label>ID : <b class="text-danger"></b>Any type of ID</label>
+                        <input name="inp_Address" required type="text" placeholder="Enter Any ID..."
+                            class="form-control mt-2">
+                    </div>
+                    <!-- ID -->
+                    <br>
+                    <!-- Contact# -->
+                    <div class="col-md-4">
+                        <label>Contact # <b class="text-danger"></b></label>
+                        <input name="inp_Contact_Num" required type="text" placeholder="Enter Contact Number here..."
+                            class="form-control mt-2">
+                    </div>
+                    <!-- Contact# -->
+                    <br>
+                    <!-- Gender -->
+                    <div class="col-md-4 mt-4">
+                        <label>Gender <b class="text-danger"></b></label>
+                        <select name="inp_Gender" required class="form-control mt-2">
+                            <option value="" disabled selected>--SELECT GENDER--</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                        </select>
 
                     </div>
-                </form>
-                 <!-- Modal footer -->
-            <div class="card-footer col-md-6">
-                <span style="float: right">
+                    <!-- Gender -->
+                </div>
+
+                <!-- Modal footer -->
+                <div class="card-footer">
+
                     <button class="btn btn-success">
                         Register Now!!
                     </button>
-                </span>
-            </div>
-           
 
-                <!-- For Text/Typography Buttom-->
+
+                </div>
+     
+    </div>
+    </div>
+
+    <!-- For Text/Typography Buttom-->
 
 </body>
 <!-- jquery -->
