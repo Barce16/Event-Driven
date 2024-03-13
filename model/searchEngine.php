@@ -1,8 +1,8 @@
 <?php
-include('../config/database.php');
+include('../Event-Driven/config/database.php');
 
 $value = $_POST['search'];// data that connect to function search.js
-$sql = "SELECT * FROM guest Where (Fname LIKE '%$value%' OR Guest_ID  LIKE '%$value%')";
+$sql = "SELECT * FROM register ";
 $result = $conn->query($sql); //connected to search.js
 
 if ($result->num_rows > 0) {
@@ -12,10 +12,10 @@ if ($result->num_rows > 0) {
         <!-- database -->
         <tr>
             <td style="text-align : center;">
-                <?= $row['Guest_ID'] ?>
+                <?= $row['ID'] ?>
             </td>
             <td>
-                <?= $row['Fname'] ?>
+                <?= $row['LName'] ?>
             </td>
         <!-- database -->
 

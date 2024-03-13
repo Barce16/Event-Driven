@@ -62,66 +62,84 @@
     <p class="mt-2">You can Register here</p>
     <div class="card mt-2">
 
-        <form action="/model/save.php/" method="POST">
+        <form action="./model/save.php/" method="POST">
             <div class="row">
 
                 <div class="card-header" style="text-align : center;"><-----Register Now !!!-----></div>
                 <div class="card-body">
-
-
+            
+        <!-- Alert -->
+                <?php
+                if (isset($_GET{'success'})){
+                    ?>
+                    <div class="alert alert-success">
+                    <b>Existed ID </b>. please try another ID ...Thank You!!
+                </div>
+                <hr>
+                <?php
+                }elseif(isset($_GET{'invalid'})){
+                    ?>
+                    <div class="alert alert-danger">
+                    <b>Existed ID </b>. please try another ID ...Thank You!!
+                </div>
+                <hr>
+                <?php
+                }
+                ?>
+        <!-- Alert -->
 
                     <!-- Fname -->
                     <div class="col-md-4 mt-2">
-                        <label>First Name <b class="text-danger"></b></label>
-                        <input name="inp_ID" required type="text" placeholder="Enter first name here..."
+                        <label>ID<b class="text-danger"></b></label>
+                        <input name="inp_ID" required type="text" placeholder="Input Valid ID here..."
                             class="form-control mt-2 ">
                     </div>
                     <!-- Fname -->
                     <br>
                     <!-- Lname -->
                     <div class="col-md-4">
-                        <label>Last Name <b class="text-danger"></b></label>
-                        <input name="inp_FName" required type="text" placeholder="Enter Last name here..."
+                        <label>First Name <b class="text-danger"></b></label>
+                        <input name="inp_FName" required type="text" placeholder="Enter Your First Name here..."
                             class="form-control mt-2">
                     </div>
                     <!-- Lname -->
                     <br>
                     <!-- Mname -->
                     <div class="col-md-4">
-                        <label>Middle Name <b class="text-danger"></b></label>
-                        <input nname="inp_LName" required type="text" placeholder="Enter Middle name here..."
+                        <label>First Name <b class="text-danger"></b></label>
+                        <input name="inp_LName" required type="text" placeholder="Enter Your Last Name here..."
                             class="form-control mt-2">
                     </div>
                     <!-- Mname -->
                     <br>
                     <!-- email -->
                     <div class="col-md-4">
-                        <label>Gmail: Ex.ParkingSystem@gmail.com <b class="text-danger"></b></label>
-                        <input name="inp_MName" required type="text" placeholder="Enter Email here..."
+                        <label>Middle Name <b class="text-danger"></b></label>
+                        <input name="inp_MName" required type="text" placeholder="Enter your Middle Name here..."
                             class="form-control mt-2">
                     </div>
                     <!-- email -->
                     <br>
                     <!-- Address -->
                     <div class="col-md-4">
-                        <label>Address <b class="text-danger"></b></label>
-                        <input name="inp_Gmail" required type="text" placeholder="Enter Address here..."
+                        <label>Gmail: <b class="text-danger"></b></label>
+                        <input name="inp_Gmail" required type="text" placeholder="Ex.ParkingSystem@gmail.com..."
                             class="form-control mt-2">
                     </div>
                     <!-- Address -->
                     <br>
                     <!-- ID -->
                     <div class="col-md-4">
-                        <label>ID : <b class="text-danger"></b>Any type of ID</label>
-                        <input name="inp_Address" required type="text" placeholder="Enter Any ID..."
+                        <label>Address : <b class="text-danger"></b>Current Location</label>
+                        <input name="inp_Address" required type="text" placeholder="Your Address..."
                             class="form-control mt-2">
                     </div>
                     <!-- ID -->
                     <br>
                     <!-- Contact# -->
                     <div class="col-md-4">
-                        <label>Contact # <b class="text-danger"></b></label>
-                        <input name="inp_Contact_Num" required type="text" placeholder="Enter Contact Number here..."
+                        <label>Contact #: <b class="text-danger">Personal Number</b></label>
+                        <input name="inp_Contact_Num" required type="text" placeholder="09XXXXXXXXX..."
                             class="form-control mt-2">
                     </div>
                     <!-- Contact# -->
