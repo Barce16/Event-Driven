@@ -23,11 +23,11 @@ function save($data)
     $query = "INSERT INTO register ($attributes) VALUES ($values)";
 
 
-    if ($conn->query($query) === TRUE) {
-        header("location: /Event-Driven/registration.php?Success");
+     if ($conn->query($query) === TRUE) {
+        header("location: /Event-Driven/registration.php?success");
     } else {
-        header("location: /Event-Driven/registration.php?Success");
-    }
+        header("location: /Event-Driven/registration.php?invalid");
+     }
 
     $conn->close(); 
 

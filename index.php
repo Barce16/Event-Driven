@@ -44,7 +44,7 @@
             <div class="collapse navbar-collapse" id="mynavbar">
                 <ul class="navbar-nav me-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="javascript:void(0)">Dashboard</a>
+                        <a class="nav-link"  href="javascript:void(0)">HOME</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./registration.php">Registration</a>

@@ -41,7 +41,7 @@
             <div class="collapse navbar-collapse" id="mynavbar">
                 <ul class="navbar-nav me-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="./index.php">Dashboard</a>
+                        <a class="nav-link" href="./index.php">HOME</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./registration.php">Registration</a>
@@ -63,98 +63,118 @@
     <div class="card mt-2">
 
         <form action="./model/save.php/" method="POST">
-            <div class="row">
 
-                <div class="card-header" style="text-align : center;"><-----Register Now !!!-----></div>
-                <div class="card-body">
-            
-        <!-- Alert -->
-                <?php
-                if (isset($_GET{'success'})){
+
+            <div class="card-header" style="text-align : center;"><-----Register Now !!!-----></div>
+            <div class="card-body">
+
+                <!-- Alert --> 
+                 <?php
+                if (isset($_GET { 'success'})){
                     ?>
-                    <div class="alert alert-success">
-                    <b>Existed ID </b>. please try another ID ...Thank You!!
-                </div>
-                <hr>
-                <?php
-                }elseif(isset($_GET{'invalid'})){
+                    
+                        <div class="alert alert-success">
+                            <b>Successfully Registered : </b>Congrats !!!.. Thank You!!!
+                        </div>
+                        
+                        <hr>
+                        <?php
+                } elseif (isset($_GET { 'invalid'})) {
                     ?>
-                    <div class="alert alert-danger">
-                    <b>Existed ID </b>. please try another ID ...Thank You!!
-                </div>
-                <hr>
-                <?php
+                        <div class="alert alert-danger">
+                            <b>Existed ID </b>. please try another ID ...Thank You!!
+                        </div>
+                        <hr>
+                        <?php
                 }
-                ?>
-        <!-- Alert -->
+                ?> 
+                <!-- Alert -->
 
-                    <!-- Fname -->
-                    <div class="col-md-4 mt-2">
+                <!-- ID -->
+
+                <div class="row">
+                    <div class="col-md-4 ">
                         <label>ID<b class="text-danger"></b></label>
                         <input name="inp_ID" required type="text" placeholder="Input Valid ID here..."
                             class="form-control mt-2 ">
                     </div>
-                    <!-- Fname -->
-                    <br>
-                    <!-- Lname -->
-                    <div class="col-md-4">
-                        <label>First Name <b class="text-danger"></b></label>
-                        <input name="inp_FName" required type="text" placeholder="Enter Your First Name here..."
-                            class="form-control mt-2">
-                    </div>
-                    <!-- Lname -->
-                    <br>
-                    <!-- Mname -->
-                    <div class="col-md-4">
-                        <label>First Name <b class="text-danger"></b></label>
-                        <input name="inp_LName" required type="text" placeholder="Enter Your Last Name here..."
-                            class="form-control mt-2">
-                    </div>
-                    <!-- Mname -->
-                    <br>
-                    <!-- email -->
-                    <div class="col-md-4">
-                        <label>Middle Name <b class="text-danger"></b></label>
-                        <input name="inp_MName" required type="text" placeholder="Enter your Middle Name here..."
-                            class="form-control mt-2">
-                    </div>
-                    <!-- email -->
-                    <br>
-                    <!-- Address -->
-                    <div class="col-md-4">
-                        <label>Gmail: <b class="text-danger"></b></label>
-                        <input name="inp_Gmail" required type="text" placeholder="Ex.ParkingSystem@gmail.com..."
-                            class="form-control mt-2">
-                    </div>
-                    <!-- Address -->
-                    <br>
                     <!-- ID -->
-                    <div class="col-md-4">
-                        <label>Address : <b class="text-danger"></b>Current Location</label>
-                        <input name="inp_Address" required type="text" placeholder="Your Address..."
-                            class="form-control mt-2">
-                    </div>
-                    <!-- ID -->
+
                     <br>
+
                     <!-- Contact# -->
                     <div class="col-md-4">
-                        <label>Contact #: <b class="text-danger">Personal Number</b></label>
+                        <b class="text-danger">Contact #: </b>
+                        <label class="">Personal Number </label>
                         <input name="inp_Contact_Num" required type="text" placeholder="09XXXXXXXXX..."
                             class="form-control mt-2">
                     </div>
                     <!-- Contact# -->
+
                     <br>
+
                     <!-- Gender -->
-                    <div class="col-md-4 mt-4">
+                    <div class="col-md-4 ">
                         <label>Gender <b class="text-danger"></b></label>
                         <select name="inp_Gender" required class="form-control mt-2">
                             <option value="" disabled selected>--SELECT GENDER--</option>
                             <option value="Male">Male</option>
                             <option value="Female">Female</option>
                         </select>
-
                     </div>
                     <!-- Gender -->
+
+                    <br>
+
+                    <!-- Fname -->
+                    <div class="col-md-4">
+                        <label>First Name <b class="text-danger"></b></label>
+                        <input name="inp_FName" required type="text" placeholder="Enter Your First Name here..."
+                            class="form-control mt-2">
+                    </div>
+                    <!-- Fname -->
+
+                    <br>
+
+                    <!-- Middle Name -->
+                    <div class="col-md-4">
+                        <label>Middle Name <b class="text-danger"></b></label>
+                        <input name="inp_MName" required type="text" placeholder="Enter your Middle Name here..."
+                            class="form-control mt-2">
+                    </div>
+                    <!-- Middle Name -->
+
+                    <br>
+
+                    <!-- Last Name -->
+                    <div class="col-md-4">
+                        <label>Last Name <b class="text-danger"></b></label>
+                        <input name="inp_LName" required type="text" placeholder="Enter Your Last Name here..."
+                            class="form-control mt-2">
+                    </div>
+                    <!-- Last Name -->
+
+                    <br>
+
+                     <!-- Address -->
+                     <div class="col-md-6">
+                        <b class="text-danger">Address:</b>
+                        <label class="">Current Location</label>
+                        <input name="inp_Address" required type="text" placeholder="Your Address..."
+                            class="form-control mt-2">
+                    </div>
+                    <!--Address-->
+
+                    <br>
+
+                    <!-- Gmail -->
+                    <div class="col-md-6">
+                        <label>Gmail: <b class="text-danger"></b></label>
+                        <input name="inp_Gmail" required type="text" placeholder="Ex.ParkingSystem@gmail.com..."
+                            class="form-control mt-2">
+                    </div>
+                    <!-- Gmail -->
+
                 </div>
 
                 <!-- Modal footer -->
@@ -166,8 +186,8 @@
 
 
                 </div>
-     
-    </div>
+
+            </div>
     </div>
 
     <!-- For Text/Typography Buttom-->
