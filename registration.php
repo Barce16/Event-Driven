@@ -90,41 +90,9 @@
                 ?> 
                 <!-- Alert -->
 
-                <!-- ID -->
 
                 <div class="row">
-                    <div class="col-md-4 ">
-                        <label>ID<b class="text-danger"></b></label>
-                        <input name="inp_ID" required type="text" placeholder="Input Valid ID here..."
-                            class="form-control mt-2 ">
-                    </div>
-                    <!-- ID -->
-
-                    <br>
-
-                    <!-- Contact# -->
-                    <div class="col-md-4">
-                        <b class="text-danger">Contact #: </b>
-                        <label class="">Personal Number </label>
-                        <input name="inp_Contact_Num" required type="text" placeholder="09XXXXXXXXX..."
-                            class="form-control mt-2">
-                    </div>
-                    <!-- Contact# -->
-
-                    <br>
-
-                    <!-- Gender -->
-                    <div class="col-md-4 ">
-                        <label>Gender <b class="text-danger"></b></label>
-                        <select name="inp_Gender" required class="form-control mt-2">
-                            <option value="" disabled selected>--SELECT GENDER--</option>
-                            <option value="Male">Male</option>
-                            <option value="Female">Female</option>
-                        </select>
-                    </div>
-                    <!-- Gender -->
-
-                    <br>
+                    
 
                     <!-- Fname -->
                     <div class="col-md-4">
@@ -153,6 +121,40 @@
                             class="form-control mt-2">
                     </div>
                     <!-- Last Name -->
+
+                    <br>
+
+                    <!-- ID -->
+                    <div class="col-md-4 ">
+                        <label>ID<b class="text-danger"></b></label>
+                        <input name="inp_ID" required type="text" placeholder="Input Valid ID here..."
+                            class="form-control mt-2 ">
+                    </div>
+                    <!-- ID -->
+
+                    <br>
+
+                    <!-- Contact# -->
+                    <div class="col-md-4">
+                        <b class="text-danger">Contact #: </b>
+                        <label class="">Personal Number </label>
+                        <input name="inp_Contact_Num" required type="text" placeholder="09XXXXXXXXX"
+                            class="form-control mt-2">
+                    </div>
+                    <!-- Contact# -->
+
+                    <br>
+
+                    <!-- Gender -->
+                    <div class="col-md-4 ">
+                        <label>Gender <b class="text-danger"></b></label>
+                        <select name="inp_Gender" required class="form-control mt-2">
+                            <option value="" disabled selected>--SELECT GENDER--</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                        </select>
+                    </div>
+                    <!-- Gender -->
 
                     <br>
 

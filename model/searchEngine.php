@@ -26,6 +26,8 @@ if ($result->num_rows > 0) {
             btn-link" data-bs-toggle="modal" data-bs-target="#show-details">
                     show detail</button>
             </td>
+        <!-- Buttons -->   
+        
         <!-- database -->
         </tr>
         <?php
