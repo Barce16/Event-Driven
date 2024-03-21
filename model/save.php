@@ -24,7 +24,7 @@ function save($data)
 
 
      if ($conn->query($query) === TRUE) {
-        header("location: /Event-Driven/registration.php?success");
+        header("location: /Event-Driven/index.php?success");
     } else {
         header("location: /Event-Driven/registration.php?invalid");
      }

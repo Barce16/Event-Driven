@@ -125,8 +125,7 @@
 
 </body>
 <!-- jquery -->
-<script src="/assets/js/jquery.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
-    crossorigin="anonymous"></script>
+<script src="/assets/js/jquery.js"></script>
 <!-- jquery -->
 
 </html>
