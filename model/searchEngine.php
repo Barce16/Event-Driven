@@ -1,9 +1,9 @@
 <?php
-include('../Event-Driven/config/database.php');
+include('../config/database.php');
 
 $value = $_POST['search'];// data that connect to function search.js
 
-$sql = "SELECT * FROM register";
+$sql = "SELECT * FROM register WHERE id";
 $result = $conn->query($sql); //connected to search.js
 
 if ($result->num_rows > 0) {
@@ -16,7 +16,7 @@ if ($result->num_rows > 0) {
                 <?= $row['ID'] ?>
             </td>
             <td>
-                <?= $row['LName'] ?>
+                <?= $row['FName'] ?>
             </td>
         <!-- database -->
 
