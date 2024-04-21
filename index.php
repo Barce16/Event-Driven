@@ -44,7 +44,7 @@
             <div class="collapse navbar-collapse" id="mynavbar">
                 <ul class="navbar-nav me-auto">
                     <li class="nav-item">
-                        <a class="nav-link"  href="javascript:void(0)">HOME</a>
+                        <a class="nav-link"  href="javascript:void(0)">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./registration.php">Registration</a>
@@ -71,7 +71,7 @@
         <p class="h1 mt-2">Smart Parking System</p>
         <p class="mt-2">You can Park your car for safety and avoid carjacking</p>
         <div class="card mt-2">
-            <div class="card-header" style="text-align : center;"><-----List of Guest-----></div>
+            <div class="card-header" style="text-align : center;">List of Guest</div>
             <div class="card-body"> <strong> </strong>
                 <table class="table table-bordered table-hover" ;>
                     <thead>

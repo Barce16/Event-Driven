@@ -41,7 +41,7 @@
             <div class="collapse navbar-collapse" id="mynavbar">
                 <ul class="navbar-nav me-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="./index.php">HOME</a>
+                        <a class="nav-link" href="./index.php">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./registration.php">Registration</a>
@@ -65,7 +65,7 @@
         <form action="./model/save.php/" method="POST">
 
 
-            <div class="card-header" style="text-align : center;"><-----Register Now !!!-----></div>
+            <div class="card-header" style="text-align : center;">Register Now !!</div>
             <div class="card-body">
 
                 <!-- Alert --> 

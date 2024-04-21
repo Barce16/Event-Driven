@@ -41,7 +41,7 @@
             <div class="collapse navbar-collapse" id="mynavbar">
                 <ul class="navbar-nav me-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="./index.php">Dashboard</a>
+                        <a class="nav-link" href="./index.php">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./registration.php">Registration</a>
@@ -60,7 +60,7 @@
         <p class="h1 mt-2">Reservation</p>
         <p class="mt-2">Reserve now!!</p>
         <div class="card mt-2">
-            <div class="card-header" style="text-align : center;"><-----List of Vacant Space-----></div>
+            <div class="card-header" style="text-align : center;">List of Vacant Space</div>
             <div class="card-body"> <strong> </strong>
 
     <!-- For Text/Typography Buttom-->

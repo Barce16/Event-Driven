@@ -3,7 +3,7 @@ include('../config/database.php');
 
 $value = $_POST['search'];// data that connect to function search.js
 
-$sql = "SELECT * FROM register WHERE id";
+$sql = "SELECT * FROM register WHERE id like '%$value%'";
 $result = $conn->query($sql); //connected to search.js
 
 if ($result->num_rows > 0) {
@@ -17,6 +17,7 @@ if ($result->num_rows > 0) {
             </td>
             <td>
                 <?= $row['FName'] ?>
+                <?= $row['LName'] ?>
             </td>
         <!-- database -->
 
