@@ -4,13 +4,15 @@
 
 $registration = array(
     'ID' => "'" . $_POST['inp_ID'] . "'",
-    'FName' => "'" . $_POST['inp_FName'] . "'",
-    'LName' => "'" . $_POST['inp_LName'] . "'",
-    'MName' => "'" . $_POST['inp_MName'] . "'",
+    'Fname' => "'" . $_POST['inp_FName'] . "'",
+    'Lname' => "'" . $_POST['inp_LName'] . "'",
+    'Mname' => "'" . $_POST['inp_MName'] . "'",
     'Gmail' => "'" . $_POST['inp_Gmail'] . "'",
     'Address' => "'" . $_POST['inp_Address'] . "'",
-    'Contact_Num' => "'" . $_POST['inp_Contact_Num'] . "'",
+    'Contact' => "'" . $_POST['inp_Contact_Num'] . "'",
     'Gender' => "'" . $_POST['inp_Gender'] . "'",
+    'Password' => "'" . $_POST['inp_Password'] . "'",
+
 );
 save($registration);
 function save($data)
@@ -20,7 +22,7 @@ function save($data)
 
     $attributes = implode(", ", array_keys($data));
     $values = implode(", ", array_values($data));
-    $query = "INSERT INTO register ($attributes) VALUES ($values)";
+    $query = "INSERT INTO registration ($attributes) VALUES ($values)";
 
 
      if ($conn->query($query) === TRUE) {
