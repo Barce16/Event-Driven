@@ -159,7 +159,7 @@
                     <br>
 
                      <!-- Address -->
-                     <div class="col-md-4">
+                     <div class="col-md-6">
                         <b class="text-danger">Address:</b>
                         <label class="">Current Location</label>
                         <input name="inp_Address" required type="text" placeholder="Your Address..."
@@ -170,21 +170,14 @@
                     <br>
 
                     <!-- Gmail -->
-                    <div class="col-md-4">
+                    <div class="col-md-6">
                         <label>Gmail: <b class="text-danger"></b></label>
                         <input name="inp_Gmail" required type="text" placeholder="Ex.ParkingSystem@gmail.com..."
                             class="form-control mt-2">
                     </div>
                     <!-- Gmail -->
 
-                    <!-- Password -->
-                    <div class="col-md-4">
-                        <label>Password: <b class="text-danger"></b></label>
-                        <input name="inp_Password" required type="text" placeholder="Password"
-                            class="form-control mt-2">
-                    </div>
-
-                    <!-- Password -->
+                    
                     <?php
                 include "./config/database.php";
 
@@ -219,8 +212,22 @@
                     </div>
                     <div class="col-md-3">
                         <label>PROVINCE : <b class="text-danger">*</b></label>
-                        <select name="inp_province" id="inp_province" required class="form-control mt-2">
+                        <select name="inp_province" id="inp_province" onchange="display_citymun(this.value)" required class="form-control mt-2">
                         <option value="" disabled selected >--SELECT PROVINCE--</option>
+                    </select>
+
+                    </div>
+                    <div class="col-md-3">
+                        <label>Municipality : <b class="text-danger">*</b></label>
+                        <select name="inp_citymun" id="inp_citymun" onchange="display_brgy(this.value)" required class="form-control mt-2">
+                        <option value="" disabled selected >--SELECT MUNICIPALITY--</option>
+                    </select>
+
+                    </div>
+                    <div class="col-md-3">
+                        <label>Baranggay : <b class="text-danger">*</b></label>
+                        <select name="inp_brgy" id="inp_brgy" required class="form-control mt-2">
+                        <option value="" disabled selected >--SELECT BARANGGAY--</option>
                     </select>
 
                     </div>
@@ -260,6 +267,32 @@
     }
     });
     }
+
+    function display_citymun(provCode){
+
+    $.ajax({
+
+    url: './model/address.php', 
+    type: 'POST', 
+    data: { 'type' : 'province', 'past_Code' : provCode }, 
+    success: function(response){
+        $('#inp_citymun').html(response); 
+    }
+    });
+    }
+
+    function display_brgy(citymunCode){
+
+$.ajax({
+
+url: './model/address.php', 
+type: 'POST', 
+data: { 'type' : 'citymun', 'past_Code' : citymunCode }, 
+success: function(response){
+    $('#inp_brgy').html(response); 
+}
+});
+}
 
 </script>
 
