@@ -59,14 +59,14 @@ function getProvince($regCode)
  
      include('../config/database.php');
  
-                      $sql = "SELECT * FROM ph_brgy Where citymunCode = '$citymunCode   '";
+                      $sql = "SELECT * FROM ph_brgy Where citymunCode = '$citymunCode'";
                       $result = $conn->query($sql);
  
                       if ($result->num_rows > 0) {
                   // output data of each row
                       while($row = $result->fetch_assoc()) {
                      ?>
-                     <option value="<?= $row["brgyCode`"] ?>"><?= $row ["brgyDesc"] ?></option>
+                     <option value="<?= $row["brgyCode"] ?>"><?= $row ["brgyDesc"] ?></option>
                      <?php
                    }
                       } else {
